@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Academix"
+        tools:targetApi="31">
+        <activity
+            android:name=".EditAssignment"
+            android:exported="false" />
+        <activity
+            android:name=".EditTeacherContact"
+            android:exported="false" />
+        <activity
+            android:name=".EditStudentContact"
+            android:exported="false" />
+        <activity
+            android:name=".AllStudentResults"
+            android:exported="false" />
+        <activity
+            android:name=".ResultsReport"
+            android:exported="false" />
+        <activity
+            android:name=".AttendanceReport"
+            android:exported="false" />
+        <activity
+            android:name=".StudentResults"
+            android:exported="false" />
+        <activity
+            android:name=".StudentAttendance"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TeacherAttendance"
+            android:exported="false" />
+        <activity
+            android:name=".AddGrade"
+            android:exported="false" />
+        <activity
+            android:name=".ViewSubmissions"
+            android:exported="false" />
+        <activity
+            android:name=".SubmitAssignment"
+            android:exported="false" />
+        <activity
+            android:name=".StudentAssignments"
+            android:exported="false" />
+        <activity
+            android:name=".StudentSubjects"
+            android:exported="false" />
+        <activity
+            android:name=".AllAssignments"
+            android:exported="false" />
+        <activity
+            android:name=".AddAssignments"
+            android:exported="false" />
+        <activity
+            android:name=".AllSubjects"
+            android:exported="false" />
+        <activity
+            android:name=".AddSubject"
+            android:exported="false" />
+        <activity
+            android:name=".TeacherDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".StudentDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".AdminNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".EditCourse"
+            android:exported="false" />
+        <activity
+            android:name=".EditTeacher"
+            android:exported="false" />
+        <activity
+            android:name=".EditStudent"
+            android:exported="false" />
+        <activity
+            android:name=".AllCourses"
+            android:exported="false" />
+        <activity
+            android:name=".AllStudents"
+            android:exported="false" />
+        <activity
+            android:name=".AllTeachers"
+            android:exported="false" />
+        <activity
+            android:name=".AdminSignup"
+            android:exported="false" />
+        <activity
+            android:name=".AdminProfile"
+            android:exported="false" />
+        <activity
+            android:name=".AdminCourses"
+            android:exported="false" />
+        <activity
+            android:name=".AdminTeachers"
+            android:exported="false" />
+        <activity
+            android:name=".AdminStudents"
+            android:exported="false" />
+        <activity
+            android:name=".AdminDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider> <!-- maps api key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/my_api_key" />
+    </application>
+
+</manifest>

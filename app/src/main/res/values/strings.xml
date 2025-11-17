@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Academix</string>
+    <string name="my_api_key">AIzaSyCFS9RsaJZsZMxVNKbi4odk6gbn0Udc7Ko</string>
+    <string name="select_course_prompt">Select course</string>
+
+    <string-array name="notifications">
+        <item>Other</item>
+        <item>Teachers Only</item>
+        <item>Students Only</item>
+        <item>All</item>
+    </string-array>
+
+</resources>

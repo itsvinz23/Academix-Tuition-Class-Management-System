@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:layout_marginTop="6dp"
+    android:elevation="2dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/submissionStudentId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="S001"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/submissionAssignment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="Assignment 1"
+        android:textColor="#0000EE"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/submissionTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="3 days early"
+        android:textColor="#11ec06" />
+
+    <TextView
+        android:id="@+id/submissionMarks"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="--"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/gradeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4D9BE6"
+        android:text="Grade"
+        android:textColor="#FFFFFF" />
+</LinearLayout>
